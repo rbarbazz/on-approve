@@ -1,0 +1,45 @@
+{
+  "name": "on-approve",
+  "version": "1.0.0",
+  "description": "Give a thumbs-up upon approving a PR",
+  "main": "index.ts",
+  "scripts": {
+    "build": "ncc build src/index.ts",
+    "lint": "eslint src/**/*.ts && prettier src/**/*.ts --check",
+    "lint:fix": "eslint --fix src/**/*.ts && prettier --write src/**/*.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbarbazz/approved.git"
+  },
+  "keywords": [],
+  "author": "rbarbazz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rbarbazz/approved/issues"
+  },
+  "homepage": "https://github.com/rbarbazz/approved#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {
+    "@octokit/webhooks": "^7.11.0",
+    "@types/jest": "^26.0.10",
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
+    "@typescript-eslint/parser": "^3.9.1",
+    "@vercel/ncc": "^0.23.0",
+    "eslint": "^7.7.0",
+    "husky": "^4.2.5",
+    "jest": "^26.4.2",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.2.0",
+    "typescript": "^3.9.7"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test && npm run build && git diff --exit-code -s dist/index.js"
+    }
+  }
+}

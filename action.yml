@@ -1,0 +1,9 @@
+name: 'on-approve'
+description: 'Give a thumbs-up upon approving a PR'
+author: 'rbarbazz'
+inputs:
+  repo-token:
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
