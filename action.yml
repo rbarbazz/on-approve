@@ -1,7 +1,8 @@
 name: 'on-approve'
 description: 'Give a thumbs-up upon approving a PR'
-icon: 'thumbs-up'
-color: 'yellow'
+branding:
+  icon: 'thumbs-up'
+  color: 'yellow'
 author: 'rbarbazz'
 inputs:
   repo-token:
