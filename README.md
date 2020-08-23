@@ -2,4 +2,4 @@
 <Pr onApprove={() => 👍} />
 ```
 
-Boilerplate for a Github action with Typescript.
+Give the author a thumbs-up upon approving a PR

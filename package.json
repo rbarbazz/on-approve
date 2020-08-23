@@ -1,7 +1,7 @@
 {
   "name": "on-approve",
   "version": "1.0.0",
-  "description": "Give a thumbs-up upon approving a PR",
+  "description": "Give the author a thumbs-up upon approving a PR",
   "main": "index.ts",
   "scripts": {
     "build": "ncc build src/index.ts",

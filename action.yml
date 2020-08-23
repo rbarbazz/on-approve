@@ -1,5 +1,5 @@
 name: 'on-approve'
-description: 'Give a thumbs-up upon approving a PR'
+description: 'Give the author a thumbs-up upon approving a PR'
 branding:
   icon: 'thumbs-up'
   color: 'yellow'
